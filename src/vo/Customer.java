@@ -11,13 +11,26 @@ public class Customer {
 	private List<Account> account;
 	private Customer parent;
 
-	public Customer(UserName userName, String phoneNumber, long customerId, List<Address> addresses,
-			List<Account> account) {
-		// TODO Auto-generated constructor stub
-	}
-
 	public UserName getUserName() {
 		return userName;
+	}
+
+	/**
+	 * @param userName
+	 * @param phoneNumber
+	 * @param customerId
+	 * @param addresses
+	 * @param account
+	 * @param parent
+	 */
+	public Customer(UserName userName, String phoneNumber, long customerId, List<Address> addresses,
+			List<Account> account,Customer parent) {
+		this.userName = userName;
+		this.phoneNumber = phoneNumber;
+		this.customerId = customerId;
+		this.addresses = addresses;
+		this.account = account;
+		this.parent = parent;
 	}
 
 	public void setUserName(UserName userName) {

@@ -2,6 +2,14 @@ package vo;
 
 public class UserName {
 
+	/**
+	 * @param firstName
+	 * @param lastName
+	 */
+	public UserName(String firstName, String lastName) {
+		this.firstName = firstName;
+		this.lastName = lastName;
+	}
 	public String firstName ;
 	public String lastName ;
 	public String getFirstName() {
